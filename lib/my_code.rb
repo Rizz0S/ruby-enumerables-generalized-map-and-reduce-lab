@@ -12,10 +12,15 @@ def map (source)
 end
 
 def reduce (source, start = nil)
-  index = 0
-  result = start
+  if start
+    result = start
+    index = 0
+  else
+    result = source[0]
+    index = 1
+  end
     while index < source.count do
-      result = yield(source[index])
+      result = yield(result, source[index])
       index += 1
     end
     result
