@@ -4,7 +4,7 @@ def map (source)
   result = []
   index = 0
   while index < source.count do
-    result.push((yield(source[index]))
+    result.push(yield(source[index]))
     index +=1
   end
 
