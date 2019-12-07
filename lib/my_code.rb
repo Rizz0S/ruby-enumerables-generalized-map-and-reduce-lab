@@ -1,13 +1,6 @@
 # Your Code Here
-index = 0
-result = []
-while index < source.count do
-  result << (source[index] * -1)
-  index += 1
-end
-result
 
-def map (source, block)
+def map (source)
   result = []
   index = i
   while index < source.count do
