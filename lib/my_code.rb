@@ -23,5 +23,5 @@ def reduce (source, start = nil)
       result = yield(result, source[index])
       index += 1
     end
-    result
+  result
 end
