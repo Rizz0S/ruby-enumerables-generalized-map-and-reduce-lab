@@ -2,9 +2,9 @@
 
 def map (source)
   result = []
-  index = i
+  index = 0
   while index < source.count do
-    result << yield(source[i])
+    result << yield(source[index])
     index +=1
   end
 
