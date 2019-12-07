@@ -11,7 +11,7 @@ def map (source)
   result
 end
 
-def reduce (source, start = 0)
+def reduce (source, start = nil)
   index = 0
   result = start
     while index < source.count do
